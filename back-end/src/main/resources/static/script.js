@@ -59,7 +59,7 @@ function createMoreOrderField() {
                                                     placeholder=" Enter Product price" disabled required></td>
             <td><input type="text" class="input-cell" id="orderProductQuantity${Ordercount}"
                                                     placeholder="Enter Quantity" required
-                                                    onkeyup="calculatePrice(${Ordercount}); validateQuantity(${Ordercount})"></td>
+                                                    onkeyup="calculatePrice(${Ordercount}),validateQuantity(${Ordercount})"></td>
              <td><input type="text" class="input-cell" id="orderTotal${Ordercount}"
                                                     placeholder="Enter Total Here" disabled required></td>
             <td><button type="button" class="remove-btn" onclick="deleteDiv(${Ordercount})">Remove</button></td>

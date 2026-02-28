@@ -48,7 +48,7 @@ public class StoreController {
             response.put("message", "Order placed successfully");
             return ResponseEntity.ok(response);
         } catch (Exception e) {
-            response.put("Error", "Error placing order: " + e.getMessage());
+            response.put("error", "Error placing order: " + e.getMessage());
             return ResponseEntity.badRequest().body(response);
         }
     }
